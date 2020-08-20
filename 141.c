@@ -1,3 +1,15 @@
+//link visited node to a trap node.
+//if there is no cycle, the traverse of linked list will end
+//else, fall into trap node
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
 bool hasCycle(struct ListNode *head) {
     struct ListNode *trap = malloc(sizeof(struct ListNode));
     trap->val = -999;
